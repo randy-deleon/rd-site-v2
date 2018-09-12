@@ -3,6 +3,8 @@ import get from 'lodash/get';
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
+import PublishedDate from '../components/published-date';
+import TimeToRead from '../components/time-to-read';
 import Layout from '../layouts/layout';
 
 const BlogContainer = styled.div`
@@ -18,20 +20,13 @@ const BlogContainer = styled.div`
   line-height: 1;
   margin: 15px 15px 0px 15px;
  `;
-
- const BlogDate = styled.small`
-  color: #e54b4b;
-  font-weight: bolder;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-left: 15px;
- `;
-
- const BlogTimeToRead = styled.small`
-  color: #555;
-  margin-left: 15px;
+ const BlogSubContainer = styled.div`
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-top:5px;
+    margin-left: 15px;
 `;
-
  const BlogContent = styled.div`
   margin: 0px 0px 30px 0;
   padding:15px;
@@ -72,8 +67,10 @@ class BlogPostTemplate extends Component {
       <BlogContainer>
       <Helmet title={`Blog - ${post.title}`} />
           <BlogTitle>{post.title}</BlogTitle>
-          <BlogDate>{post.publishDate}</BlogDate>
-          <BlogTimeToRead>{post.body.childMarkdownRemark.timeToRead} min read</BlogTimeToRead>
+          <BlogSubContainer>
+          <PublishedDate>{post.publishDate}</PublishedDate>
+          <TimeToRead>{post.body.childMarkdownRemark.timeToRead} min read</TimeToRead>
+          </BlogSubContainer>
           <BlogContent
             dangerouslySetInnerHTML={{
               __html: post.body.childMarkdownRemark.html,
