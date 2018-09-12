@@ -19,7 +19,6 @@
     "gatsby-plugin-sentry": "^0.1.0",
     "gatsby-plugin-sharp": "next",
     "gatsby-plugin-sitemap": "next",
-    "gatsby-plugin-sri": "^1.0.3",
     "gatsby-plugin-styled-components": "next",
     "gatsby-source-contentful": "next",
     "gatsby-transformer-remark": "next",

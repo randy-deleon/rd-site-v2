@@ -116,6 +116,7 @@ module.exports = {
         }
       }
     },
+    'gatsby-plugin-offline'
     {
       resolve: 'gatsby-plugin-feed',
       options: {
@@ -194,12 +195,6 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-sri',
-      options: {
-        hash: 'sha512'
-      }
-    },
-    {
       resolve: `gatsby-plugin-netlify`,
       options: {
         headers: {},
@@ -222,6 +217,5 @@ module.exports = {
         generateMatchPathRewrites: true
       }
     },
-    'gatsby-plugin-offline'
   ]
 };
