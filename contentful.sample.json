@@ -1,0 +1,10 @@
+{
+    "development": {
+        "spaceId": "SPACEID",
+        "accessToken": "PREVIEW TOKEN"
+    },
+    "production": {
+        "spaceId": "SPACEID",
+        "accessToken": "CONTENT DELIVERY TOKEN"
+    }
+}

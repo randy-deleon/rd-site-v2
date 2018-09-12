@@ -1,0 +1,60 @@
+{
+  "name": "rd-site-v2",
+  "description": "randydeleon.com v2",
+  "version": "1.0.0",
+  "author": "randy deleon",
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.6.3",
+    "contentful-import": "^7.3.0",
+    "gatsby": "next",
+    "gatsby-image": "next",
+    "gatsby-plugin-canonical-urls": "next",
+    "gatsby-plugin-feed": "next",
+    "gatsby-plugin-google-analytics": "next",
+    "gatsby-plugin-manifest": "next",
+    "gatsby-plugin-netlify": "next",
+    "gatsby-plugin-offline": "next",
+    "gatsby-plugin-react-helmet": "next",
+    "gatsby-plugin-robots-txt": "^1.3.0",
+    "gatsby-plugin-sentry": "^0.1.0",
+    "gatsby-plugin-sharp": "next",
+    "gatsby-plugin-sitemap": "next",
+    "gatsby-plugin-sri": "^1.0.3",
+    "gatsby-plugin-styled-components": "next",
+    "gatsby-source-contentful": "next",
+    "gatsby-transformer-remark": "next",
+    "gatsby-transformer-sharp": "next",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-helmet": "^5.2.0",
+    "rimraf": "^2.6.2",
+    "styled-components": "^3.4.5"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run dev",
+    "build": "npm run clean:public && gatsby build",
+    "dev": "gatsby develop",
+    "serve": "gatsby serve",
+    "format": "prettier --write '**/*.js'",
+    "clean": "npm run clean:public && npm run clean:cache",
+    "clean:public": "rimraf ./public/*",
+    "clean:cache": "rimraf ./.cache"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-plugin-macros": "^2.4.0",
+    "chalk": "^2.4.1",
+    "path": "^0.12.7",
+    "prettier": "^1.14.2"
+  }
+}
