@@ -69,7 +69,7 @@ class BlogPostTemplate extends Component {
           <BlogTitle>{post.title}</BlogTitle>
           <BlogSubContainer>
           <PublishedDate>{post.publishDate}</PublishedDate>
-          <TimeToRead>{post.body.childMarkdownRemark.timeToRead} min read</TimeToRead>
+          <TimeToRead>{post.body.childMarkdownRemark.timeToRead}</TimeToRead>
           </BlogSubContainer>
           <BlogContent
             dangerouslySetInnerHTML={{
