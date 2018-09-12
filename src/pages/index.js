@@ -6,7 +6,6 @@ import LayoutNoNav from '../layouts/layout-nonav';
 class HomeIndex extends Component {
   render() {
     const [author] = get(this, 'props.data.allContentfulPerson.edges');
-
     return (
       <LayoutNoNav>
           <Hero person={author} />
@@ -25,7 +24,6 @@ export const pageQuery = graphql`
           shortBio {
             shortBio
           }
-          title
         }
       }
     }

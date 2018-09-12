@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 import Index from './index';
@@ -16,9 +15,5 @@ const LayoutNoNav = ({children }) => (
     </Main>
   </Index>
 )
-
-LayoutNoNav.propTypes = {
-  children: PropTypes.node.isRequired,
-}
 
 export default LayoutNoNav

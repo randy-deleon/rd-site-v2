@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
-
 const Copyright = styled.div`
     text-align: center;
     margin-top: 10px;
@@ -46,7 +44,6 @@ const NetlifyIcon = styled.svg`
 `;
 
 export default () => (
-
 <Copyright>
     <IconContainer>
     Made with <HeartIcon>&#x2764; </HeartIcon> using

@@ -1,5 +1,4 @@
 import { graphql, StaticQuery } from 'gatsby';
-import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
@@ -13,7 +12,7 @@ const GridContainer = styled.article`
   height: 100%;
   display: grid;
   grid-template-areas: 'header' 'main' 'footer';
-  grid-template-rows: 60px 2fr 1fr;
+  grid-template-rows: 60px 2fr 80px;
   grid-template-columns: 1fr;
   grid-gap: 15px;
 `;
@@ -53,9 +52,5 @@ const Index = ({children }) => (
     )}
   />
 )
-
-Index.propTypes = {
-  children: PropTypes.node.isRequired,
-}
 
 export default Index
