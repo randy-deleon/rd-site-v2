@@ -19,8 +19,6 @@ const GridContainer = styled.article`
 
 const Footer = styled.footer`
     grid-area: footer;
-    align-content: end;
-    display:grid;
 `;
 
 const Index = ({children }) => (

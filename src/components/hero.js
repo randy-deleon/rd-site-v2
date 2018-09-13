@@ -1,7 +1,7 @@
 import Link from 'gatsby-link';
 import React from 'react';
 import styled from 'styled-components';
-import Logo from './logo';
+import LogoV2 from './logov2';
 
 const Hero = styled.div`
     width: 320px;
@@ -12,12 +12,7 @@ const Name = styled.h1`
   letter-spacing: 2px;
   font-size:2em;
 `;
-// const Title = styled.h2`
-//   letter-spacing: 5px;
-//   font-size: 1em;
-//   margin:-10px 0 0;
-//   text-transform: uppercase;
-// `;
+
 const BlogLink = styled(Link)`
   text-decoration:none;
   margin: 0px 5px;
@@ -54,15 +49,14 @@ const TwitterIcon = styled.svg`
 `;
 
 const Description = styled.p`
-    margin: 30px 0;
+    margin: 0 0 40px 0;
 `;
 
 export default ({ person }) => (
   <Hero>
-    <Logo />
+    <LogoV2 />
     <Name>{person.node.name}</Name>
-    {/* <Title>{person.node.title}</Title> */}
-    <Description>{person.node.shortBio.shortBio}</Description>
+   <Description>{person.node.shortBio.shortBio}</Description>
     <BlogLink to="/blog" title="blog">CHECK OUT MY BLOG</BlogLink>
     <br />
       <IconLink href="https://github.com/randy-deleon" className="icon-link">
