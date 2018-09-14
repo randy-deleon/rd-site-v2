@@ -23,6 +23,7 @@ export const pageQuery = graphql`
           shortBio {
             shortBio
           }
+          title
         }
       }
     }
