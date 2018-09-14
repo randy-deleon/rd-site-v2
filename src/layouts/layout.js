@@ -13,7 +13,7 @@ const Main = styled.main`
   min-height:100%;
 `;
 
-const Layout = ({children }) => (
+export default ({children }) => (
     <Index>
         <Header>
             <Nav />
@@ -23,5 +23,3 @@ const Layout = ({children }) => (
         </Main>
      </Index>
 )
-
-export default Layout

@@ -8,18 +8,22 @@ const BlogPreviewContainer = styled.div`
     background-color:#fff;
     border-top: 5px solid #e54b4b;
 `;
+
 const BlogPreview = styled.div`
     padding:15px;
 `;
+
 const PreviewSubContainer = styled.div`
     display:grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     margin-top:5px;
 `;
+
 const PreviewDescription = styled.p`
     margin-top:15px;
 `;
+
 const PreviewLink = styled(Link)`
     color: #555;
     text-decoration:none;

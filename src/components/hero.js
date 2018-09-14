@@ -12,13 +12,13 @@ const Name = styled.h1`
   letter-spacing: 2px;
   font-size:2em;
 `;
-
 const BlogLink = styled(Link)`
   text-decoration:none;
   margin: 0px 5px;
   padding: 5px 20px;
   font-weight: 600;
   color:#555;
+  display:inherit;
   &:hover {
     color: #e54b4b;
     text-decoration:underline;
@@ -35,7 +35,6 @@ const IconLink = styled.a`
     height:35px;
   }
 `;
-
 const GithubIcon = styled.svg`
   width: 50px;
   margin: 0 20px;
@@ -47,18 +46,15 @@ const TwitterIcon = styled.svg`
   margin: 0 20px;
   cursor:pointer;
 `;
-
 const Description = styled.p`
     margin: 0 0 40px 0;
 `;
-
 export default ({ person }) => (
   <Hero>
     <LogoV2 />
     <Name>{person.node.name}</Name>
    <Description>{person.node.shortBio.shortBio}</Description>
     <BlogLink to="/blog" title="blog">CHECK OUT MY BLOG</BlogLink>
-    <br />
       <IconLink href="https://github.com/randy-deleon" className="icon-link">
         <GithubIcon aria-labelledby="github" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <title id="github">Github Icon</title>

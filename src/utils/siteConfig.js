@@ -8,4 +8,5 @@ module.exports = {
   themeColor: '#e54b4b', // Used for Offline Manifest
   siteLogo: '/images/logo.png', // Logo used for SEO, RSS, and App manifest
   copyright: `Copyright \xA9 ${(new Date()).getUTCFullYear()} Randy De Leon` // Copyright string for the RSS feed
+
 }

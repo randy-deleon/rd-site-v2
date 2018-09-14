@@ -40,4 +40,4 @@ export default () => (
       <WhiteLink to='/blog'>Blog</WhiteLink>
     </Navigation>
   </NavContainer>
-);
+)

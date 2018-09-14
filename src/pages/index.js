@@ -8,13 +8,12 @@ class HomeIndex extends Component {
     const [author] = get(this, 'props.data.allContentfulPerson.edges');
     return (
       <LayoutNoNav>
-          <Hero person={author} />
+         <Hero person={author} />
       </LayoutNoNav>
     )
   }
 }
 export default HomeIndex
-
 export const pageQuery = graphql`
   query HomeQuery {
     allContentfulPerson{
