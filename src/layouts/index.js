@@ -3,8 +3,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import Favicon from '../../static/favicon.ico';
-import AppleIcon from '../../static/icons/apple-touch-icon.png';
 import Copyright from '../components/copyright';
+import AppleIcon from '../images/icons/apple-touch-icon.png';
 import config from '../utils/siteConfig';
 import './index.css';
 
@@ -38,9 +38,9 @@ const Index = ({children}) => (
         <Helmet title={data.site.siteMetadata.title}>
           <html lang="en" />
           <meta name="description" content={config.siteDescription} />
-          <meta name="msapplication-TileColor" content="#e54b4b"></meta>
           <link rel="apple-touch-icon" sizes="180x180" href={AppleIcon} />
           <link rel="icon" href={Favicon} />
+          <meta name="msapplication-TileColor" content="#e54b4b"></meta>
         </Helmet>
             {children}
           <Footer>

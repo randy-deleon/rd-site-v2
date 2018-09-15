@@ -40,9 +40,6 @@ module.exports = {
     }
   },
   plugins: [
-    `gatsby-transformer-remark`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
@@ -116,6 +113,9 @@ module.exports = {
         }
       }
     },
+    `gatsby-transformer-remark`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-feed',
@@ -210,11 +210,6 @@ module.exports = {
           `X-Content-Type-Options: nosniff`
           // "X-Xss-Protection: 1; mode=block", //implicitly enabled by the plugin
         ],
-        mergeSecurityHeaders: true,
-        mergeLinkHeaders: true,
-        mergeCachingHeaders: true,
-        transformHeaders: (headers, path) => headers,
-        generateMatchPathRewrites: true
       }
     },
   ]
