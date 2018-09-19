@@ -22,7 +22,7 @@ const BlogList = styled.ul`
   margin: 0;
   display: grid;
   grid-gap: 15px;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: minmax(340px, 1fr);
   justify-content: center;
 `;
 
