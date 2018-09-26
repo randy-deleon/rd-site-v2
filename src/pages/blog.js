@@ -16,6 +16,12 @@ const Title = styled.h2`
   text-transform: uppercase;
   text-align: center;
 `;
+
+const SubTitle = styled.h4`
+  font-size: 13px;
+  text-align: center;
+`;
+
 const BlogList = styled.ul`
   list-style: none;
   padding: 0;
@@ -39,11 +45,11 @@ class BlogIndex extends Component {
   render() {
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
     return (
-
       <Layout>
         <Helmet title="Blog"/>
         <BlogContainer>
           <Title className="section-headline">Blog</Title>
+          <SubTitle>"JUST WRITING ABOUT WHAT THE UNIVERSE TOLD ME"</SubTitle>
           <BlogList>
             {posts.map(({ node }) => {
               return (

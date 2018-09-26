@@ -15,7 +15,10 @@ const TimeToRead = styled.small`
 export default ({children}) => {
   return (
     <TimeToRead>
-        <svg aria-labelledby="bookicon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><title id="bookicon"></title><path fill="#555" d="M14 2v13H3.5a1.5 1.5 0 1 1 0-3H13V0H3C1.9 0 1 .9 1 2v12c0 1.1.9 2 2 2h12V2h-1z"/><path fill="#555" d="M3.501 13H3.5a.5.5 0 0 0 0 1H12.999v-1H3.501z"/></svg>
+        <svg aria-labelledby="readicon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><title id="readicon"></title>
+           <path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zm0-1.6A6.4 6.4 0 1 0 8 1.6a6.4 6.4 0 0 0 0 12.8zm-.8-6.072V3.2h1.6v4.472l3.16 3.16-1.128 1.128L7.2 8.328z" fill="#555"/>
+
+        </svg>
         <span>{children} min read</span>
     </TimeToRead>
   );
