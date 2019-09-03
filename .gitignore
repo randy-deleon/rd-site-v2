@@ -74,3 +74,6 @@ bin
 contentful
 
 .contentful.json
+
+#Clean up
+Clean.md
