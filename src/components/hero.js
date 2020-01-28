@@ -22,15 +22,15 @@ const Title = styled.h2`
 `;
 
 const BlogLink = styled(Link)`
-  text-decoration:none;
+  text-decoration-style:dotted;
   margin: 0px 5px;
   padding: 5px 20px;
   font-weight: 600;
-  color:#555;
+  color: #e54b4b;
   display:inherit;
   &:hover {
-    color: #e54b4b;
-    text-decoration:underline;
+    color:#555;
+     text-decoration-style:dotted;
   }
 `;
 

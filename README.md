@@ -1,5 +1,7 @@
 # rd-site-v2
 
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/bb7667b9-c440-46db-bc6a-9e07fb03692a/deploy-status)](https://app.netlify.com/sites/randydeleon/deploys)
+
 References:
 - GatsbyJS
 - Contentful
@@ -16,3 +18,4 @@ References:
 - Simple Icons
 - Lighthouse Chrome Extension
 - Figma Design
+
