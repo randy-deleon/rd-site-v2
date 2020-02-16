@@ -37,7 +37,7 @@ export default () => (
     <Logo />
     <Navigation role='navigation'>
       <WhiteLink to='/'>Home</WhiteLink>
-      <WhiteLink to='/blog'>Blog</WhiteLink>
+      {/* <WhiteLink to='/blog'>Blog</WhiteLink> */}
     </Navigation>
   </NavContainer>
 )
